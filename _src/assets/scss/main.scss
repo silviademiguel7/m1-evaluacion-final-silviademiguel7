@@ -16,6 +16,10 @@ body {
   min-width: 320px;
   max-width: 768px;
 }
+.enlace{
+  color: inherit;
+  text-decoration: inherit;
+}
 /*header*/
 .header{
   position: fixed;
@@ -25,15 +29,24 @@ body {
   width: 44px;
   height: 44px;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu-nav-head{
-    width: 100%;
-    height: 100%;}
+    width: 16px;
+    height: 14px;}
+.boton{
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  background: transparent;
+
+}
 /*main*/
 /*hero*/
-.main{
-  position: relative;
-}
+
 .hero{
   background-image: url("../images/cover.jpg");
   width: 100%;
@@ -56,6 +69,7 @@ body {
   background-color: $color-white;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .title-hero{
@@ -148,19 +162,24 @@ h3 p{
   align-items: center;
 }
 /*flecha entre footer y main*/
-.position-footer-flecha{
 
-
-}
 /*footer*/
 
 .footer{
+  position: relative;
   font-family: $text-Roboto-Regular;
   color: $color-white;
   background-color:$color-blue-dark;
   font-size: 16px;
   text-align: center;
   padding-bottom: 45px;
+}
+.position-footer-flecha{
+
+position: absolute;
+transform: translate(-22px,-50%);
+left: 50%;
+
 }
 .lista-footer{
   list-style: none;
@@ -176,6 +195,8 @@ h3 p{
   text-transform: uppercase;
 
 }
-
+.corazonletra{
+  color: $color-naranja;
+}
 
 
