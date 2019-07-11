@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
   <title>Mi pagina web</title>
@@ -18,7 +18,7 @@
   </header>
   <main class="main">
     <div class="hero">
-      <div class="container-hero">
+      <div class="container-hero page-wrapper">
         <div class="title-hero">
           <h1>Anonymous <br>proxy</h1>
         </div>
@@ -33,74 +33,76 @@
       </div>
     </div>
 
-      <section class="seccion-editorial">
-        <span id="team" class="anchor-nav"></span>
-        <div class="title-small-editorial">
-          <small>Insomnia Tips</small>
-        </div>
-        <h2 class="title-editorial">Looking Through a Window</h2>
-        <p class="parrafo-editorial"> Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex
-          diam nec lectus. Vivamus semper sodales rutrum.</p>
-        <div class="enlace-editorial">
-          <button class="boton">GO</button>
-        </div>
-      </section>
+    <section class="seccion-editorial page-wrapper">
+      <span id="team" class="anchor-nav"></span>
+      <div class="title-small-editorial">
+        <small>Insomnia Tips</small>
+      </div>
+      <h2 class="title-editorial">Looking Through a Window</h2>
+      <p class="parrafo-editorial"> Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex
+        diam nec lectus. Vivamus semper sodales rutrum.</p>
+      <div class="enlace-editorial">
+        <button class="boton">GO</button>
+      </div>
+    </section>
 
-      <article class="seccion-contenido">
-        <h2 class="title-contenido">3 Reason to purchase</h2>
-        <ul class="list-reasons">
-          <li>
-            <div class="reason">
-              <h3>Ut sed metus</h3>
-              <p>Lorem ipsum dolor sit amet, consecteur.</p>
-            </div>
-          </li>
-          <li>
-            <div class="reason">
-              <h3>Curabitur ac erat</h3>
-              <p>Mauris mattis urna quis lorem molestie.</p>
-            </div>
-          </li>
-          <li>
-            <div class="reason">
-              <h3>Morbi dictum</h3>
-              <p>Aliquam in dolor et dolor tincidunt.</p>
-            </div>
-          </li>
-        </ul>
-        <button class="btn-more-reasons boton">
-          <div>MORE REASONS</div>
-        </button>
-      </article>
+    <article class="seccion-contenido page-wrapper">
+      <h2 class="title-contenido">3 Reason to purchase</h2>
+      <ul class="list-reasons">
+        <li class="col1reason">
+          <div class="reason">
+            <h3>Ut sed metus</h3>
+            <p>Lorem ipsum dolor sit amet, consecteur.</p>
+          </div>
+        </li>
+        <li class="col2reason">
+          <div class="reason">
+            <h3>Curabitur ac erat</h3>
+            <p>Mauris mattis urna quis lorem molestie.</p>
+          </div>
+        </li>
+        <li class="col3reason">
+          <div>
+            <h3>Morbi dictum</h3>
+            <p>Aliquam in dolor et dolor tincidunt.</p>
+          </div>
+        </li>
+      </ul>
+      <button class="btn-more-reasons boton">
+        More reasons
+      </button>
+    </article>
 
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer page-wrapper">
 
-      <div class="icono-hero position-footer-flecha">
-        <a href="index.html#header">
-          <img src="../assets/images/ico-arrow.svg" alt="icono de flecha">
-        </a>
-      </div>
-      <div>
-        <ul class="lista-footer">
-          <li><a href="#" class="enlace">ARTICLES</a></li>
-          <li><a href="#" class="enlace">BOOKS</a></li>
-          <li><a href="#" class="enlace">EVENTS</a></li>
-          <li><a href="#" class="enlace">REASONS</a></li>
-          <li><a href="#" class="enlace">TIPS</a></li>
-        </ul>
-      </div>
-      <div>
-        <ul class="lista-footer2">
-          <li><a href="#" class="enlace">Twitter</a></li>
-          <li><a href="#" class="enlace">Instagram</a></li>
-          <li><a href="#" class="enlace">Mastodon.social</a></li>
-        </ul>
-      </div>
-      <div>©2017</div>
-      <div>we <span class="corazonletra">❤︎</span> components</div>
+    <div class="icono-hero position-footer-flecha">
+      <a href="index.html#header">
+        <img src="../assets/images/ico-arrow.svg" alt="icono de flecha">
+      </a>
+    </div>
+    <div>
+      <ul class="lista-footer col1footer">
+        <li><a href="#" class="enlace">ARTICLES</a></li>
+        <li><a href="#" class="enlace">BOOKS</a></li>
+        <li><a href="#" class="enlace">EVENTS</a></li>
+        <li><a href="#" class="enlace">REASONS</a></li>
+        <li><a href="#" class="enlace">TIPS</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="lista-footer2 col2footer">
+        <li><a href="#" class="enlace">Twitter</a></li>
+        <li><a href="#" class="enlace">Instagram</a></li>
+        <li><a href="#" class="enlace">Mastodon.social</a></li>
+      </ul>
+    </div>
+    <div class="col3footer">
+    <div>©2017</div>
+    <div>we <span class="corazonletra">❤︎</span> components</div>
+  </div>
 
   </footer>
 

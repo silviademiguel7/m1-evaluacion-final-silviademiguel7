@@ -2,10 +2,9 @@
 
 body {
 	margin: 0;
-  height: 100vh;
   font-family: $text-RobotoSlab-Bold;
-  /*font-family: 'Roboto', sans-serif;*/
 }
+
 *{
   box-sizing: border-box;
   margin: 0px;
@@ -13,11 +12,29 @@ body {
 .page-wrapper{
   padding-left:15px;
   padding-right: 15px;
+  @media all and (min-width: 768px){
+    padding-left:38px;
+    padding-right: 38px;
+  }
+  @media all and (min-width: 1200px){
+    padding-left: 275px;
+    padding-right: 275px;
+  }
 }
 .enlace{
   color: inherit;
   text-decoration: inherit;
 }
+h1{
+  font-size: 42px;
+}
+h2{
+  font-size: 24px;
+}
+h3{
+  font-size: 18px;
+}
+
 /*header*/
 .header{
   position: fixed;
@@ -40,7 +57,7 @@ body {
   padding: 0;
   width: auto;
   background: transparent;
-
+  font-family: $text-Roboto-Regular;
 }
 /*main*/
 /*hero*/
@@ -80,7 +97,7 @@ body {
   /*width: 290px;
   height: 110px;*/
   margin-bottom: 10px;
-  font-size: 42px;
+  /*ont-size: 42px;*/
   text-transform: uppercase;
 }
 .title2-hero{
@@ -88,13 +105,14 @@ body {
   height: 21px;*/
   text-align: center;
   margin-bottom: 45px;
-  font-size: 16px;
+  /*font-size: 16px;*/
   font-family: $text-Roboto-Regular;
 }
 /*secion editorial*/
 .seccion-editorial{
   background-color: $color-white;
-  padding: 30px 15px 45px 15px;
+  padding-top: 30px;
+  padding-bottom: 45px;
 }
 .title-small-editorial{
   width: 90px;
@@ -106,8 +124,8 @@ small{
 }
 .title-editorial{
   margin-bottom: 15px;
-  width: 290px;
-  height: 60px;
+  /*width: 290px;
+  height: 60px;*/
 }
 .parrafo-editorial{
   font-size: 18px;
@@ -130,8 +148,6 @@ h3 p{
   font-family: $text-Roboto-Regular;
 }
 .seccion-contenido{
-  padding-left:15px;
-  padding-right: 15px;
   background-color: $color-ice;
   text-align: center;
   padding-bottom: 60px;
@@ -139,18 +155,41 @@ h3 p{
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 .title-contenido{
   text-align: center;
   margin-bottom: 45px;
+  /*font-size: 24px;*/
 }
 .list-reasons{
   list-style: none;
   padding-inline-start: 0px;
-}
-.list-reasons{
   text-align: center;
   margin-bottom: 45px;
+  @media all and (min-width: 768px){
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 27px;
+    margin-bottom: 60px;
+  }
+}
+@media all and (min-width: 768px){
+  .list-reasons li h3{
+    margin-bottom: 14px;
+  }
+}
+@media all and (min-width: 768px){
+.col1reason{
+grid-column: 1/3;
+}
+.col2reason{
+  grid-column: 3/5;
+}
+.col3reason{
+  grid-column: 5/7;
+}
 }
 .reason{
   margin-bottom: 45px;
@@ -166,8 +205,10 @@ h3 p{
   display: flex;
   justify-content: center;
   align-items: center;
+  @media all and (min-width: 768px){
+    width: 210px;
+  }
 }
-
 /*footer*/
 
 .footer{
@@ -175,19 +216,31 @@ h3 p{
   font-family: $text-Roboto-Regular;
   color: $color-white;
   background-color:$color-blue-dark;
-  font-size: 16px;
+  /*font-size: 16px;*/
   text-align: center;
   padding-bottom: 45px;
-  padding-left:15px;
-  padding-right: 15px;
-
+  @media all and (min-width: 768px){
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 27px;
+  }
 }
+@media all and (min-width: 768px){
+  .col1footer{
+  grid-column: 1/1;
+  }
+  .col2footer{
+    grid-column: 3/3;
+  }
+  .col3footer{
+    grid-column: 5/5;
+  }
+  }
 .position-footer-flecha{
-
 position: absolute;
 transform: translate(-22px,-50%);
 left: 50%;
-
 }
 .lista-footer{
   list-style: none;
@@ -201,7 +254,6 @@ left: 50%;
   margin-bottom: 30px;
   padding: 0px;
   text-transform: uppercase;
-
 }
 .corazonletra{
   color: $color-naranja;
