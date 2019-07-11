@@ -2,13 +2,16 @@
 
 body {
 	margin: 0;
-	height: 100vh;
+  height: 100vh;
+  font-family: $text-RobotoSlab-Bold;
+  /*font-family: 'Roboto', sans-serif;*/
 }
 *{
   box-sizing: border-box;
   margin: 0px;
 }
 .page-wrapper{
+  width: 100%;
   margin:0px 15px;
   min-width: 320px;
   max-width: 768px;
@@ -68,6 +71,7 @@ body {
   text-align: center;
   margin-bottom: 45px;
   font-size: 16px;
+  font-family: $text-Roboto-Regular;
 }
 /*secion editorial*/
 .seccion-editorial{
@@ -79,6 +83,9 @@ body {
   height: 30px;
   color: $color-blue-ligth;
 }
+small{
+  font-family: $text-Roboto-Regular;
+}
 .title-editorial{
   margin-bottom: 15px;
   width: 290px;
@@ -88,6 +95,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 30px;
+  font-family: $text-Roboto-Regular;
 }
 .enlace-editorial{
   display: flex;
@@ -100,6 +108,9 @@ body {
   border-radius: 22.5px;
 }
 /*secion contenido*/
+h3 p{
+  font-family: $text-Roboto-Regular;
+}
 .seccion-contenido{
   background-color: $color-blue-ligth;
   text-align: center;
@@ -126,6 +137,8 @@ body {
 }
 .btn-more-reasons{
   color: $color-white;
+  font-size: 20px;
+  line-height: 45px;
   width: 184px;
   height: 45px;
   border-radius: 22.5px;
@@ -133,17 +146,36 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}/*footer*/
+}
+/*flecha entre footer y main*/
+.position-footer-flecha{
+
+
+}
+/*footer*/
+
 .footer{
+  font-family: $text-Roboto-Regular;
   color: $color-white;
   background-color:$color-blue-dark;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 45px;
 }
 .lista-footer{
   list-style: none;
+  margin-bottom: 30px;
+  padding: 0px;
+  padding-top: 60px;
+  text-transform: uppercase;
 }
-.position-footer-flecha{
-  position: absolute;
-  transform: translate( 138px, -22px);
+.lista-footer2{
+  list-style: none;
+  margin-bottom: 30px;
+  padding: 0px;
+  text-transform: uppercase;
 
 }
+
+
 
