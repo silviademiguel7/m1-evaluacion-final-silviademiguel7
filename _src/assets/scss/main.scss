@@ -1,15 +1,17 @@
 @import "core/_varaibles";
+@import "core/_header.scss";
+@import "core/_main.scss";
+@import "core/_footer.scss";
+
 
 body {
   margin: 0;
   font-family: $text-RobotoSlab-Bold;
 }
-
 * {
   box-sizing: border-box;
   margin: 0px;
 }
-
 img {
   display: block; /* cquita el espacio extra cuando la imagen esta dentro de un a*/
 }
@@ -50,32 +52,6 @@ h3 {
     font-size: 24px;
   }
 }
-
-/*header*/
-.header {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background-color: $color-blue;
-  width: 44px;
-  height: 44px;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.menu-nav-head {
-  width: 16px;
-  height: 14px;
-}
-.boton {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  background: transparent;
-  font-family: $text-Roboto-Regular;
-}
 /*main*/
 /*hero*/
 .hero {
@@ -96,7 +72,6 @@ h3 {
   padding-right: 15px;
   transform: translate(0, 50%);
 }
-
 .icono-hero {
   position: absolute;
   left: 50%;

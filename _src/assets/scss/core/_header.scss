@@ -1,0 +1,26 @@
+
+/*header*/
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: $color-blue;
+  width: 44px;
+  height: 44px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-nav-head {
+  width: 16px;
+  height: 14px;
+}
+.boton {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  background: transparent;
+  font-family: $text-Roboto-Regular;
+}
