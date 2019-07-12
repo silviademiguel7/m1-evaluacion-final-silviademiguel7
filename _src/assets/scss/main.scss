@@ -3,7 +3,6 @@
 @import "core/_main.scss";
 @import "core/_footer.scss";
 
-
 body {
   margin: 0;
   font-family: $text-RobotoSlab-Bold;
@@ -15,7 +14,6 @@ body {
 img {
   display: block; /* cquita el espacio extra cuando la imagen esta dentro de un a*/
 }
-
 .page-wrapper {
   padding-left: 15px;
   padding-right: 15px;
@@ -51,75 +49,4 @@ h3 {
   @media all and (min-width: 768px) {
     font-size: 24px;
   }
-}
-
-/*footer*/
-
-.footer {
-  position: relative;
-  font-family: $text-Roboto-Regular;
-  color: $color-white;
-  background-color: $color-blue-dark;
-  /*font-size: 16px;*/
-  text-align: center;
-  padding-bottom: 45px;
-  display: flex;
-  justify-content: center;
-}
-.enlace {
-  line-height: 30px;
-  color: inherit;
-  text-decoration: inherit;
-  &:hover{
-    opacity: 0.5;
-  }
-  }
-.footer-grid {
-  padding-top: 60px;
-}
-@media all and (min-width: 768px) {
-  .footer-grid {
-    display: grid;
-    padding-top: 45px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 27px;
-    text-align: left;
-    max-width: 730px;
-  }
-}
-
-@media all and (min-width: 768px) {
-  .col1footer {
-    grid-column: 1/1;
-    grid-row: 1/2;
-  }
-  .col2footer {
-    grid-column: 3/3;
-    grid-row: 1/2;
-  }
-  .col3footer {
-    grid-column: 5/5;
-    grid-row: 1/2;
-  }
-}
-.position-footer-flecha {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.lista-footer {
-  list-style: none;
-  margin-bottom: 30px;
-  padding: 0px;
-  text-transform: uppercase;
-}
-.lista-footer2 {
-  list-style: none;
-  margin-bottom: 30px;
-  padding: 0px;
-  text-transform: uppercase;
-}
-.corazonletra {
-  color: $color-naranja;
 }
