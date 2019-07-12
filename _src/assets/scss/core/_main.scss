@@ -4,6 +4,7 @@
   background-image: url("../images/cover.jpg");
   width: 100%;
   height: 100vh;
+  min-height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,6 +12,9 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+  @media all and (min-width: 768px) {
+    min-height: 760px;
+    }
 }
 .container-hero {
   color: $color-white;
