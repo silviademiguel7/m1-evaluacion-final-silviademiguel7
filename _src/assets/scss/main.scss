@@ -37,7 +37,7 @@ h1 {
   }
   @media all and (min-width: 1200px) {
     font-size: 100px;
-}
+  }
 }
 h2 {
   font-size: 24px;
@@ -46,7 +46,7 @@ h2 {
   }
   @media all and (min-width: 1200px) {
     font-size: 32px;
-}
+  }
 }
 h3 {
   font-size: 18px;
@@ -89,20 +89,23 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.container-hero {
-  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container-hero {
   color: $color-white;
-  padding-bottom: 53px;
-  padding-top: 284px;
   padding-left: 15px;
   padding-right: 15px;
+  transform: translate(0, 50%);
 }
 
 .icono-hero {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 53px;
   width: 45px;
   height: 45px;
   text-align: center;
@@ -111,12 +114,16 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media all and (min-width: 768px) {
+    bottom: 45px;
+  }
+  @media all and (min-width: 1200px) {
+    bottom: 13px;
+  }
 }
-
 .title-hero {
   text-align: center;
   /*width: 290px;*/
-
   margin-bottom: 10px;
   /*ont-size: 42px;*/
   text-transform: uppercase;
@@ -284,18 +291,22 @@ h3 p {
 @media all and (min-width: 768px) {
   .col1footer {
     grid-column: 1/1;
+    grid-row: 1/2;
   }
   .col2footer {
     grid-column: 3/3;
+    grid-row: 1/2;
   }
   .col3footer {
     grid-column: 5/5;
+    grid-row: 1/2;
   }
 }
 .position-footer-flecha {
   position: absolute;
-  transform: translate(-22px, -50%);
+  top: 0;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 .lista-footer {
   list-style: none;
