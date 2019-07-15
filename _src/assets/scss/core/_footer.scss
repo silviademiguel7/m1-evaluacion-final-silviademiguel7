@@ -15,7 +15,9 @@
   line-height: 30px;
   color: inherit;
   text-decoration: inherit;
+  transition: opacity ease 2s;
   &:hover {
+
     opacity: 0.5;
   }
 }
